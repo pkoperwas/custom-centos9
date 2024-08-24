@@ -55,3 +55,13 @@ mkisofs \
 -V "OL-8–7–0-BaseOS-x86_64" \
 -jcharset utf-8 /root/iso
 ```
+
+**Make the ISO UEFI Bootable**
+```
+isohybrid - uefi /root/custom-centos9.iso
+```
+
+**Implant Checksum for New ISO**
+```
+implantisomd5 /root/custom-centos9.iso
+```
