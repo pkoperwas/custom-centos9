@@ -1,4 +1,4 @@
-# Steps to prepare own Custom (via kickstart) Centos9 ISO file 
+# Steps to prepare own custom (via kickstart) Centos9 ISO file 
 # 
 
 **Download files:**
