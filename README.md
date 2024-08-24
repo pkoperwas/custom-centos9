@@ -1,4 +1,4 @@
-#Download files:
+# Download files:
 
 1. Downoload ks.cfg from this repo to /root/ks.cfg
 2. Download 11GB http://mirroronet.pl/pub/mirrors/centos-stream/9-stream/BaseOS/x86_64/iso/CentOS-Stream-9-latest-x86_64-dvd1.iso to /root/CentOS-Stream-9-latest-x86_64-dvd1.iso
