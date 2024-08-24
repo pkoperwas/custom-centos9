@@ -1,7 +1,7 @@
 **Download files:**
 ```
-Downoload ks.cfg from this repo to /root/ks.cfg
-Download 11GB http://mirroronet.pl/pub/mirrors/centos-stream/9-stream/BaseOS/x86_64/iso/CentOS-Stream-9-latest-x86_64-dvd1.iso to /root/CentOS-Stream-9-latest-x86_64-dvd1.iso
+Downoload ks.cfg [from this repo](https://raw.githubusercontent.com/pkoperwas/custom-centos9/main/ks.cfg) to /root/ks.cfg
+Download [11GB-centos9-iso](http://mirroronet.pl/pub/mirrors/centos-stream/9-stream/BaseOS/x86_64/iso/CentOS-Stream-9-latest-x86_64-dvd1.iso) to /root/CentOS-Stream-9-latest-x86_64-dvd1.iso
 ```
 
 **Prepare custom ISO on your linux**
