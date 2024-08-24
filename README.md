@@ -73,3 +73,6 @@ isohybrid --uefi /nfs-server/custom-centos9.iso
 dnf install isomd5sum -y
 implantisomd5 /nfs-server/custom-centos9.iso
 ```
+
+> [!WARNING]
+> In case of starting installation on VMWare make sure you are creating a virtual machine profile Centos9 if not visible Centos8, please don't use RHEL9 as this system by default enables UEFI Secure Boot with Official Centos ISO image doesnt support. 
