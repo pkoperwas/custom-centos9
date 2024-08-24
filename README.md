@@ -81,4 +81,4 @@ implantisomd5 /nfs-server/custom-centos9.iso
 
 ![screenshot](installation_process1.png)
 ![screenshot](installation_process2.png)
-![screenshot](installation_process2.png)
+![screenshot](installation_process3.png)
