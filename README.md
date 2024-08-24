@@ -59,7 +59,7 @@ mkisofs \
 **Make the ISO UEFI Bootable**
 ```
 dnf install syslinux -y
-isohybrid - uefi /root/custom-centos9.iso
+isohybrid --uefi /root/custom-centos9.iso
 ```
 
 **Implant Checksum for New ISO**
