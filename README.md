@@ -1,5 +1,5 @@
 # Steps to prepare own custom (via kickstart) Centos9 ISO file 
-* *steps tested on centos9* *
+*steps tested on centos9*
 
 **Download files:**
 ```
