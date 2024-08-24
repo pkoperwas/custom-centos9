@@ -16,7 +16,7 @@ cp -pvRf /mnt/iso/* /root/iso
 umount /mnt/iso
 ```
 
-**Make a Note of the ISO’s Label**  LABEL="CentOS-Stream-9-BaseOS-x86_64"
+**Make a Note of the ISO’s Label**  currently for CentOS-Stream-9-latest-x86_64-dvd1.iso is LABEL="CentOS-Stream-9-BaseOS-x86_64"
 ```
 blkid /root/CentOS-Stream-9-latest-x86_64-dvd1.iso
 ```
