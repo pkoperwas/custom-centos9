@@ -35,11 +35,13 @@ grep -A4 "^label linux" /nfs-server/centos9iso/isolinux/isolinux.cfg
 
 **Modify the isolinux.cfg file to Point to the New Kickstart File**
 ```
-sed -i '/^\s*append initrd=/ s/$/ inst.ks=cdrom:\/ks.cfg/' /nfs-server/centos9iso/isolinux/isolinux.cfg
+sed -i '/^\s*append initrd=/ s/$/ inst.ks=cdrom:\/ks.cfg/' ls
 sed -i '/^[[:space:]]*kernel @KERNELPATH@ @ROOT@ quiet/s/$/ inst.ks=cdrom:\/ks.cfg/' /nfs-server/centos9iso/isolinux/grub.conf
 sed -i 's/^default=1/default=0/' /nfs-server/centos9iso/isolinux/grub.conf
 sed -i 's/^timeout 60/timeout 1/' /nfs-server/centos9iso/isolinux/grub.conf
-
+sed -i 's/set default="1"/set default="0"/' /nfs-server/centos9iso/EFI/BOOT/grub.cfg
+sed -i 's/set timeout=60/set timeout=1/' /nfs-server/centos9iso/EFI/BOOT/grub.cfg
+sed -i '/^[[:space:]]*linuxefi \/images\/pxeboot\/vmlinuz inst.stage2=hd:LABEL=CentOS-Stream-9-BaseOS-x86_64 quiet/s/$/ inst.ks=cdrom:\/ks.cfg/' /nfs-server/centos9iso/EFI/BOOT/grub.cfg
 
 ```
 
