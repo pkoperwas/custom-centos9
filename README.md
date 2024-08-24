@@ -39,7 +39,7 @@ sed -i '/^\s*append initrd=/ s/$/ inst.ks=cdrom:\/ks.cfg/' /root/iso/isolinux/is
 
 **Generate the New ISO**
 ```
-dnf install genisoimage
+dnf install genisoimage -y
 mkisofs \
 -o /root/custom-centos9.iso \
 -b isolinux/isolinux.bin \
@@ -63,5 +63,6 @@ isohybrid - uefi /root/custom-centos9.iso
 
 **Implant Checksum for New ISO**
 ```
+dnf install isomd5sum -y
 implantisomd5 /root/custom-centos9.iso
 ```
