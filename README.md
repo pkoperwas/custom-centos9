@@ -9,6 +9,7 @@ wget http://mirroronet.pl/pub/mirrors/centos-stream/9-stream/BaseOS/x86_64/iso/C
 
 **Prepare custom ISO on your linux**
 ```
+mkdir /mnt/iso
 mount -o loop /root/CentOS-Stream-9-latest-x86_64-dvd1.iso /mnt/iso
 shopt -s dotglob
 mkdir /root/iso
