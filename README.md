@@ -36,3 +36,22 @@ grep -A4 "^label linux" /root/iso/isolinux/isolinux.cfg
 ```
 sed -i '/^\s*append initrd=/ s/$/ inst.ks=cdrom:\/ks.cfg/' /root/iso/isolinux/isolinux.cfg
 ```
+
+**Generate the New ISO**
+```
+dnf install genisoimage
+mkisofs \
+-o /root/custom-centos9.iso \
+-b isolinux/isolinux.bin \
+-J -joliet-long -R -l -v \
+-c isolinux/boot.cat \
+-no-emul-boot \
+-boot-load-size 4 \
+-boot-info-table \
+-eltorito-alt-boot \
+-e images/efiboot.img \
+-no-emul-boot \
+-graft-points \
+-V "OL-8–7–0-BaseOS-x86_64" \
+-jcharset utf-8 /root/iso
+```
