@@ -54,7 +54,7 @@ mkisofs \
 -e images/efiboot.img \
 -no-emul-boot \
 -graft-points \
--V "OL-8–7–0-BaseOS-x86_64" \
+-V "CentOS-Stream-9-BaseOS-x86_64" \
 -jcharset utf-8 /root/iso
 ```
 
