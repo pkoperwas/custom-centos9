@@ -1,6 +1,11 @@
 # Steps to prepare own custom (via kickstart) Centos9 ISO file 
 *steps tested on centos9*
 
+
+
+
+
+
 **Download files:**
 ```
 wget https://raw.githubusercontent.com/pkoperwas/custom-centos9/main/ks.cfg -O /root/ks.cfg
