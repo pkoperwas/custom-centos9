@@ -79,4 +79,6 @@ implantisomd5 /nfs-server/custom-centos9.iso
 > [!WARNING]
 > In case of starting installation on VMWare make sure you are creating a virtual machine profile Centos9 or if 9 not visible you can choose Centos8, please don't use RHEL9 as this system by default enables UEFI Secure Boot with Official Centos ISO image doesn't support. (Botloader and Kernel are not signed by UEFI)
 
-![screenshot](installation_process.png)
+![screenshot](installation_process1.png)
+![screenshot](installation_process2.png)
+![screenshot](installation_process2.png)
