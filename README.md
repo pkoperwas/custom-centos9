@@ -28,11 +28,6 @@ blkid /nfs-server/CentOS-Stream-9-latest-x86_64-dvd1.iso
 cp /nfs-server/ks.cfg /nfs-server/centos9iso
 ```
 
-**Check isolinux Menu for Linux Install Entry**
-```
-grep -A4 "^label linux" /nfs-server/centos9iso/isolinux/isolinux.cfg
-```
-
 **Modify the isolinux.cfg file to Point to the New Kickstart File**
 ```
 sed -i '/^\s*append initrd=/ s/$/ inst.ks=cdrom:\/ks.cfg/' /nfs-server/centos9iso/isolinux/isolinux.cfg
