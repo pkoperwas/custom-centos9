@@ -1,11 +1,11 @@
-# How to prepare own custom (via kickstart) Centos9 ISO file 
+# Custom CENTOS9 ISO (via kickstart file) 
 *steps tested on centos9*
 #
 
 
 **Download files:**
 ```
-wget https://raw.githubusercontent.com/pkoperwas/custom-centos9/main/ks.cfg -O /nfs-server/ks.cfg
+wget https://raw.githubusercontent.com/pkoperwas/custom-centos9/main/centos9-ks.cfg -O /nfs-server/ks.cfg
 wget http://mirroronet.pl/pub/mirrors/centos-stream/9-stream/BaseOS/x86_64/iso/CentOS-Stream-9-latest-x86_64-dvd1.iso -O /nfs-server/CentOS-Stream-9-latest-x86_64-dvd1.iso
 ```
 
