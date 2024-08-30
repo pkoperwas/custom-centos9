@@ -1,4 +1,4 @@
-# Custom CENTOS9 ISO (via kickstart file) 
+# Custom CentOS9 ISO (via kickstart file) 
 *steps tested on centos9*
 #
 
